@@ -68,10 +68,12 @@
 
 
 
-  <meta name="keywords" content="自动化，WPT，Otaku">
+  <meta name="keywords" content="Notes,">
 
 
 
+
+  
 
 
   <link rel="alternate" href="/atom.xml" title="Oerrol的博客" type="application/atom+xml">
@@ -81,17 +83,22 @@
 
 
 
-<meta name="description" content="西安交通大学2011级少年班，西安交通大学电信学院2017届本科毕业，华中科技大学2017级研究生在读">
-<meta name="keywords" content="自动化，WPT，Otaku">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Oerrol的博客">
-<meta property="og:url" content="http://oerrol.github.io/tags/WPT/index.html">
+<meta name="description" content="问题分析数据采集设备为GoCator 2300 Series线激光传感器，数据获取途径为基于GoCator SDK与团队开发的软件实现。定义单次扫描激光线方向为X方向；激光线移动方向为Y方向，采用右手系。采集过程参数如下：  线激光移动速度：1000mm/min 刷新率：50Hz X向范围：±200mm">
+<meta name="keywords" content="Notes">
+<meta property="og:type" content="article">
+<meta property="og:title" content="增材成形直壁的点云预处理">
+<meta property="og:url" content="http://oerrol.github.io/2020/07/21/20200721/index.html">
 <meta property="og:site_name" content="Oerrol的博客">
-<meta property="og:description" content="西安交通大学2011级少年班，西安交通大学电信学院2017届本科毕业，华中科技大学2017级研究生在读">
+<meta property="og:description" content="问题分析数据采集设备为GoCator 2300 Series线激光传感器，数据获取途径为基于GoCator SDK与团队开发的软件实现。定义单次扫描激光线方向为X方向；激光线移动方向为Y方向，采用右手系。采集过程参数如下：  线激光移动速度：1000mm/min 刷新率：50Hz X向范围：±200mm">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="http://oerrol.github.io/assets/img/20200721/origincloud.png">
+<meta property="og:image" content="http://oerrol.github.io/assets/img/20200721/origincloud_loc.png">
+<meta property="og:image" content="http://oerrol.github.io/assets/img/20200721/processedcloud.png">
+<meta property="og:updated_time" content="2020-07-21T12:31:56.708Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Oerrol的博客">
-<meta name="twitter:description" content="西安交通大学2011级少年班，西安交通大学电信学院2017届本科毕业，华中科技大学2017级研究生在读">
+<meta name="twitter:title" content="增材成形直壁的点云预处理">
+<meta name="twitter:description" content="问题分析数据采集设备为GoCator 2300 Series线激光传感器，数据获取途径为基于GoCator SDK与团队开发的软件实现。定义单次扫描激光线方向为X方向；激光线移动方向为Y方向，采用右手系。采集过程参数如下：  线激光移动速度：1000mm/min 刷新率：50Hz X向范围：±200mm">
+<meta name="twitter:image" content="http://oerrol.github.io/assets/img/20200721/origincloud.png">
 
 
 
@@ -121,13 +128,13 @@
 
 
 
-  <link rel="canonical" href="http://oerrol.github.io/tags/WPT/">
+  <link rel="canonical" href="http://oerrol.github.io/2020/07/21/20200721/">
 
 
 
 
 
-  <title>Tag: WPT | Oerrol的博客</title>
+  <title>增材成形直壁的点云预处理 | Oerrol的博客</title>
   
 
 
@@ -146,7 +153,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -220,52 +227,274 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>WPT<small>Tag</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://oerrol.github.io/2020/07/21/20200721/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Oerrol Song">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Oerrol的博客">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2017/08/07/20170804/" itemprop="url">
-              
-                <span itemprop="name">磁耦合谐振方式下的无线能量传输初探（1）</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">增材成形直壁的点云预处理</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2017-08-07T00:00:00+08:00" content="2017-08-07">
-          08-07
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-07-21T00:00:00+08:00">
+                2020-07-21
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2020/07/21/20200721/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2020/07/21/20200721/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2020/07/21/20200721/" class="leancloud_visitors" data-flag-title="增材成形直壁的点云预处理">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="问题分析"><a href="#问题分析" class="headerlink" title="问题分析"></a>问题分析</h1><p>数据采集设备为GoCator 2300 Series线激光传感器，数据获取途径为基于GoCator SDK与团队开发的软件实现。定义单次扫描激光线方向为X方向；激光线移动方向为Y方向，采用右手系。采集过程参数如下：</p>
+<ul>
+<li>线激光移动速度：1000mm/min</li>
+<li>刷新率：50Hz</li>
+<li>X向范围：±200mm</li>
+</ul>
+<a id="more"></a>
+<p>可以看到，对于以上扫描参数，Y向分辨率约为$1000mm/60/50 = 0.33mm$，精度优于电弧增材的成形精度，参数可行。</p>
+<p>一次扫描得到的点云数据如下图所示：</p>
+<p><img src="/assets/img/20200721/origincloud.png" alt="origincloud"></p>
+<p>通过简单的查看若干点的坐标信息，我们可以看到，直壁顶部的高度约为0，而基板的高度约为负值。显然，这与我们的认知不符。造成这一现象的原因主要为测量时未重置机床的外部坐标偏移，线激光工作位置所连接的整体机头上升，基板高度下降。</p>
+<p><img src="/assets/img/20200721/origincloud_loc.png" alt="origincloud_loc"></p>
+<p>最终需要的结果为：</p>
+<ul>
+<li>只需要直壁部分点云及其周围部分的基板</li>
+<li>将基板的高度调整为0，直壁顶面的高度按原关系上升</li>
+</ul>
+<p>在明确了背景条件与需求后，开始对点云进行处理。</p>
+<h1 id="处理过程"><a href="#处理过程" class="headerlink" title="处理过程"></a>处理过程</h1><p>基于VS2017+PCL1.9.1环境，编写MFC程序进行数据处理。主要分为以下几个步骤：</p>
+<ol>
+<li>通过高度滤波初步找到焊道点云；</li>
+<li>第一次区域生长方法，找到最大区域，确定为直壁顶面；</li>
+<li>获取顶面的XY边界；</li>
+<li>回到原始点云，通过XY边界+一定的松弛量获得直壁+基板点云；</li>
+<li>第二次区域生长方法，找到平均高度最低的区域，确定为基板，并记录其平均高度；</li>
+<li>对整体点云进行偏移；</li>
+<li>完成。</li>
+</ol>
+<pre><code>void CDataPreProcessSingleDlg::SingleBeadProcess(double xOversize, double yOversize)
+{
+// 焊道处理代码
+m_pointCloud.PassThrough(-5.5f, 5.0f, 2);//初步找到焊道
+m_pointCloud.StatisticalOutlierRemoval(30, 1.0);//移除离群点
+#pragma region 第一次区域生长-找到焊道
+std::vector &lt;pcl::PointIndices&gt; clusters;
+pcl::ModelCoefficients::Ptr coefficients(new pcl::ModelCoefficients);
+pcl::PointIndices::Ptr inliers(new pcl::PointIndices);
+m_pointCloud.Segmentation_RegionGrow(clusters, 50, 100, 5.0, 1.0);
+int Idx_Max_Cluster = 0, Max_Cluster = 0;
+for (size_t index_i = 0; index_i &lt; clusters.size(); index_i++) {
+    //寻找最大区域 
+    if (clusters[index_i].indices.size() &gt; Max_Cluster) {
+        Max_Cluster = clusters[index_i].indices.size();
+        Idx_Max_Cluster = index_i;
+    }
+}
+m_pointCloud.ExtractCloutByIndice(clusters[Idx_Max_Cluster], false);
+#pragma endregion
+
+std::vector&lt;double&gt; boundary = m_pointCloud.FindBoundary();//找到XY边界
+m_pointCloud.ReloadRawData();//重载原始数据
+m_pointCloud.PassThrough(boundary[0] - xOversize, boundary[1] + xOversize, 0);//X边界滤波
+m_pointCloud.PassThrough(boundary[2] - yOversize, boundary[3] + yOversize, 1);//Y边界滤波
+m_pointCloud.Downsample(0.3f, 0.3f, 0.3f);//稀疏化
+m_pointCloud.StatisticalOutlierRemoval(30, 1.0);//移除离群点
+
+#pragma region 第二次区域生长-坐标校正
+m_pointCloud.Segmentation_RegionGrow(clusters, 50, 100, 5.0, 1.0);
+double Min_Cluster_Height = 0;
+double tempHeight = 0;
+Idx_Max_Cluster = 0;
+for (size_t index_i = 0; index_i &lt; clusters.size(); index_i++) {
+    //寻找均值高度最低的区域
+    tempHeight = m_pointCloud.GetAverageHeightByIndice(clusters[index_i]);
+    if (tempHeight &lt; Min_Cluster_Height) {
+        Min_Cluster_Height = tempHeight;
+        Idx_Max_Cluster = index_i;
+    }
+}
+m_pointCloud.SimpleTranslation(0, 0, -Min_Cluster_Height);
+#pragma endregion
+}
+</code></pre><p>增加打开文件与保存的功能</p>
+<pre><code>void CDataPreProcessSingleDlg::OnBnClickedBtnBeadsprocessandsave()
+{
+// TODO: 在此添加控件通知处理程序代码
+CFileDialogdlgFile(TRUE, NULL, NULL, OFN_ALLOWMULTISELECT, _T(&quot;TXT Files (*.txt)|*.txt|PCD Files (*.pcd)|*.pcd|All Files (*.*)|*.*||&quot;), NULL);
+std::vector&lt;CString&gt; vecFileNames;
+const int MIN_FILE_NUMBER = 300;   //至少允许选择10个文件
+dlgFile.m_ofn.lpstrFile = new TCHAR[_MAX_PATH * MIN_FILE_NUMBER]; //重新定义缓冲区大小  
+memset(dlgFile.m_ofn.lpstrFile, 0, _MAX_PATH * MIN_FILE_NUMBER);  //初始化定义的缓冲区
+dlgFile.m_ofn.nMaxFile = _MAX_PATH * MIN_FILE_NUMBER;
+if (dlgFile.DoModal())
+{
+    CString tempFileName = _T(&quot;&quot;);
+    POSITION pos = dlgFile.GetStartPosition();
+    while (pos != NULL)
+    {
+        vecFileNames.push_back(dlgFile.GetNextPathName(pos));
+    }
+}
+m_vdOutputArray.clear();
+for (size_t i = 0; i &lt; vecFileNames.size(); i++)
+{
+    CString strFile = vecFileNames[i];
+    CString tempSaveName;
+    tempSaveName.Format(_T(&quot;%d&quot;), i);
+    tempSaveName = &quot;a&quot; + tempSaveName + &quot;.pcd&quot;;
+    m_pointCloud.ReadTXTFile(strFile.GetBuffer(0));
+    SingleBeadProcess(20, 20);
+    m_pointCloud.SaveCurrentCloudASCII(tempSaveName.GetBuffer(0));
+}
+
+UpdateData(false);
+}
+</code></pre><p>最终效果：</p>
+<p><img src="/assets/img/20200721/processedcloud.png" alt="processedcloud"></p>
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Notes/" rel="tag"># Notes</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/03/20/20190320/" rel="next" title="Windows下VS2017+PCL1.9.1配置">
+                <i class="fa fa-chevron-left"></i> Windows下VS2017+PCL1.9.1配置
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -273,6 +502,13 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
 
         </div>
         
@@ -293,8 +529,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -386,6 +631,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#问题分析"><span class="nav-number">1.</span> <span class="nav-text">问题分析</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#处理过程"><span class="nav-number">2.</span> <span class="nav-text">处理过程</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -519,6 +780,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 

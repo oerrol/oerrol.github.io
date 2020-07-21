@@ -81,20 +81,20 @@
 
 
 
-<meta name="description" content="###总结一下最近学习到的东西，备忘 最近主要被安排做关于无线能量传输（WPT）的一些工作，更具体来说是利用磁耦合谐振（magnetical coupling resonant）来进行的WPT，即MCR-WPT。">
+<meta name="description" content="总结一下最近学习到的东西，备忘最近主要被安排做关于无线能量传输（WPT）的一些工作，更具体来说是利用磁耦合谐振（magnetical coupling resonant）来进行的WPT，即MCR-WPT。">
 <meta name="keywords" content="WPT">
 <meta property="og:type" content="article">
 <meta property="og:title" content="磁耦合谐振方式下的无线能量传输初探（1）">
 <meta property="og:url" content="http://oerrol.github.io/2017/08/07/20170804/index.html">
 <meta property="og:site_name" content="Oerrol的博客">
-<meta property="og:description" content="###总结一下最近学习到的东西，备忘 最近主要被安排做关于无线能量传输（WPT）的一些工作，更具体来说是利用磁耦合谐振（magnetical coupling resonant）来进行的WPT，即MCR-WPT。">
+<meta property="og:description" content="总结一下最近学习到的东西，备忘最近主要被安排做关于无线能量传输（WPT）的一些工作，更具体来说是利用磁耦合谐振（magnetical coupling resonant）来进行的WPT，即MCR-WPT。">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://oerrol.github.io/assets/img/MIT.png">
 <meta property="og:image" content="http://oerrol.github.io/assets/img/structures.png">
 <meta property="og:updated_time" content="2017-08-08T12:37:38.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="磁耦合谐振方式下的无线能量传输初探（1）">
-<meta name="twitter:description" content="###总结一下最近学习到的东西，备忘 最近主要被安排做关于无线能量传输（WPT）的一些工作，更具体来说是利用磁耦合谐振（magnetical coupling resonant）来进行的WPT，即MCR-WPT。">
+<meta name="twitter:description" content="总结一下最近学习到的东西，备忘最近主要被安排做关于无线能量传输（WPT）的一些工作，更具体来说是利用磁耦合谐振（magnetical coupling resonant）来进行的WPT，即MCR-WPT。">
 <meta name="twitter:image" content="http://oerrol.github.io/assets/img/MIT.png">
 
 
@@ -326,8 +326,7 @@
       
 
       
-        <p>###总结一下最近学习到的东西，备忘</p>
-<p>最近主要被安排做关于<strong>无线能量传输（WPT）</strong>的一些工作，更具体来说是利用磁耦合谐振（magnetical coupling resonant）来进行的WPT，即<strong>MCR-WPT</strong>。<a id="more"></a></p>
+        <h3 id="总结一下最近学习到的东西，备忘"><a href="#总结一下最近学习到的东西，备忘" class="headerlink" title="总结一下最近学习到的东西，备忘"></a>总结一下最近学习到的东西，备忘</h3><p>最近主要被安排做关于<strong>无线能量传输（WPT）</strong>的一些工作，更具体来说是利用磁耦合谐振（magnetical coupling resonant）来进行的WPT，即<strong>MCR-WPT</strong>。<a id="more"></a></p>
 <p>磁耦合谐振式无线能量传输的概念最早在2006年由MIT的团队提出，其现场演示了在2m的距离下点亮一盏功率60W的灯泡，效率约为40%。<br><img src="/assets/img/MIT.png" alt="MIT"><br>该项技术需要线圈相互耦合，并工作在谐振频率附近，以达到在一个较远的距离下，仍可以有较高的传输效率，这是其他的无线能量传输方式所难以做到的。<br>磁耦合谐振产生的基础在于需要有两个线圈，有了两个线圈，才能去进行所谓的“无线能量传输”。而在上面图中展示的结构为最简单的双线圈结构。为了对电路进行电源以及负载匹配，在发射端前部以及接收端后部各加入了一个线圈，使得驱动源、发射线圈、接收线圈以及负载相互分离，这就是四线圈结构。<br><img src="/assets/img/structures.png" alt="structures"><br>以上两种结构的等效电路模型在本文中就不展开介绍了，有兴趣的读者可以自行尝试推导或查阅相关文献，对这方面的研究已经是较为深入以及透彻的了。另外，目前我的研究主要基于四线圈结构的MCR-WPT来进行，其相较于双线圈结构有着许多的优势，这也是目前研究的主流。</p>
 <p>在对MCR-WPT系统的学习过程中，有几个名词是不可避免会接触到的。首先是<strong>谐振</strong>。对于我们的电路结构，由于其中有电感以及电容的存在，因此在其谐振频率处，即使施加的电压不高，也能拥有较大的电流，从而产生较大的电磁场。由于谐振的存在，发射线圈电容的电场与电感的磁场不断进行能量交换，而在这个过程中，由于接收线圈中也有电感，其对发射线圈电感的变化产生了感应电流，因此实现了能量的传输。而接收线圈也同样通过电容与电感电场、磁场的相互交换，将能量传送给负载。在此过程中，若发射、接收线圈都工作在谐振频率上，那么系统的传输效率将会大大提高。</p>
 <p>接下来，在研究频率特性时，会经常接触到一个名词——<strong>频率分裂</strong></p>
@@ -428,8 +427,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -444,7 +452,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -522,6 +530,22 @@
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#总结一下最近学习到的东西，备忘"><span class="nav-number">1.</span> <span class="nav-text">总结一下最近学习到的东西，备忘</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
 
@@ -535,7 +559,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -844,6 +868,8 @@
   
 
   
+  
+
 
   
 

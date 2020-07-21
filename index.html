@@ -235,6 +235,156 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://oerrol.github.io/2020/07/21/20200721/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Oerrol Song">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Oerrol的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/07/21/20200721/" itemprop="url">增材成形直壁的点云预处理</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-07-21T00:00:00+08:00">
+                2020-07-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2020/07/21/20200721/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2020/07/21/20200721/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2020/07/21/20200721/" class="leancloud_visitors" data-flag-title="增材成形直壁的点云预处理">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h1 id="问题分析"><a href="#问题分析" class="headerlink" title="问题分析"></a>问题分析</h1><p>数据采集设备为GoCator 2300 Series线激光传感器，数据获取途径为基于GoCator SDK与团队开发的软件实现。定义单次扫描激光线方向为X方向；激光线移动方向为Y方向，采用右手系。采集过程参数如下：</p>
+<ul>
+<li>线激光移动速度：1000mm/min</li>
+<li>刷新率：50Hz</li>
+<li>X向范围：±200mm</li>
+</ul>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/07/21/20200721/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://oerrol.github.io/2019/03/20/20190320/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -326,10 +476,11 @@
 
       
         
-          <p>##安装<br>1.前往PCL的发布页面，选择适当的版本进行下载。注意win32/win64版本对应的是编译器，我是win10X64，编译的是32位程序，因此下载最新版的PCL-1.9.1-AllInOne-msvc2017-win32.exe和pcl-1.9.1-pdb-msvc2017-win32.zip</p>
+          <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>1.前往PCL的发布页面，选择适当的版本进行下载。注意win32/win64版本对应的是编译器，我是win10X64，编译的是32位程序，因此下载最新版的PCL-1.9.1-AllInOne-msvc2017-win32.exe和pcl-1.9.1-pdb-msvc2017-win32.zip</p>
 <blockquote>
 <p><a href="https://github.com/PointCloudLibrary/pcl/releases" target="_blank" rel="noopener">https://github.com/PointCloudLibrary/pcl/releases</a></p>
 </blockquote>
+<p><em>20200721 Ps. 笔者已改为面向X64编程，因此安装的是64位版本，安装与配置过程与32位版本无差异。</em></p>
 <p>安装过程中可以直接下一步，会弹出OpenNI2的安装选项，最好选择安装在PCL库第三方功能3rdParty目录下，这样后面配置环境会相对方便。
           <!--noindex-->
           <div class="post-button text-center">
@@ -476,8 +627,7 @@
       
         
           
-            <p>###一年过去了</p>
-<p>总的来讲，一年过去了，上一年做的是WPT，也去新加坡开了个会，投了篇会议，蹭会议的SCI被拒了，然后现在转到机械做控制了。</p>
+            <h3 id="一年过去了"><a href="#一年过去了" class="headerlink" title="一年过去了"></a>一年过去了</h3><p>总的来讲，一年过去了，上一年做的是WPT，也去新加坡开了个会，投了篇会议，蹭会议的SCI被拒了，然后现在转到机械做控制了。</p>
 <p>机械这边的话是在做金属增减材复合制造方面的研究，也算是刚入门吧，加油。</p>
 
           
@@ -618,8 +768,7 @@
 
       
         
-          <p>###总结一下最近学习到的东西，备忘</p>
-<p>最近主要被安排做关于<strong>无线能量传输（WPT）</strong>的一些工作，更具体来说是利用磁耦合谐振（magnetical coupling resonant）来进行的WPT，即<strong>MCR-WPT</strong>。
+          <h3 id="总结一下最近学习到的东西，备忘"><a href="#总结一下最近学习到的东西，备忘" class="headerlink" title="总结一下最近学习到的东西，备忘"></a>总结一下最近学习到的东西，备忘</h3><p>最近主要被安排做关于<strong>无线能量传输（WPT）</strong>的一些工作，更具体来说是利用磁耦合谐振（magnetical coupling resonant）来进行的WPT，即<strong>MCR-WPT</strong>。
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2017/08/07/20170804/#more" rel="contents">
@@ -847,7 +996,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -938,7 +1087,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -1243,6 +1392,28 @@
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
 
   
 

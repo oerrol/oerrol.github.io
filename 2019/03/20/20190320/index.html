@@ -73,8 +73,6 @@
 
 
 
-  
-
 
   <link rel="alternate" href="/atom.xml" title="Oerrol的博客" type="application/atom+xml">
 
@@ -83,23 +81,23 @@
 
 
 
-<meta name="description" content="##安装1.前往PCL的发布页面，选择适当的版本进行下载。注意win32/win64版本对应的是编译器，我是win10X64，编译的是32位程序，因此下载最新版的PCL-1.9.1-AllInOne-msvc2017-win32.exe和pcl-1.9.1-pdb-msvc2017-win32.zip  https://github.com/PointCloudLibrary/pcl/releas">
+<meta name="description" content="安装1.前往PCL的发布页面，选择适当的版本进行下载。注意win32/win64版本对应的是编译器，我是win10X64，编译的是32位程序，因此下载最新版的PCL-1.9.1-AllInOne-msvc2017-win32.exe和pcl-1.9.1-pdb-msvc2017-win32.zip  https://github.com/PointCloudLibrary/pcl/releases">
 <meta name="keywords" content="Notes">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Windows下VS2017+PCL1.9.1配置">
 <meta property="og:url" content="http://oerrol.github.io/2019/03/20/20190320/index.html">
 <meta property="og:site_name" content="Oerrol的博客">
-<meta property="og:description" content="##安装1.前往PCL的发布页面，选择适当的版本进行下载。注意win32/win64版本对应的是编译器，我是win10X64，编译的是32位程序，因此下载最新版的PCL-1.9.1-AllInOne-msvc2017-win32.exe和pcl-1.9.1-pdb-msvc2017-win32.zip  https://github.com/PointCloudLibrary/pcl/releas">
+<meta property="og:description" content="安装1.前往PCL的发布页面，选择适当的版本进行下载。注意win32/win64版本对应的是编译器，我是win10X64，编译的是32位程序，因此下载最新版的PCL-1.9.1-AllInOne-msvc2017-win32.exe和pcl-1.9.1-pdb-msvc2017-win32.zip  https://github.com/PointCloudLibrary/pcl/releases">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://oerrol.github.io/assets/img/PCL191/PATH.png">
 <meta property="og:image" content="http://oerrol.github.io/assets/img/PCL191/INCLUDES.png">
 <meta property="og:image" content="http://oerrol.github.io/assets/img/PCL191/LIBS.png">
 <meta property="og:image" content="http://oerrol.github.io/assets/img/PCL191/PRE.png">
 <meta property="og:image" content="http://oerrol.github.io/assets/img/PCL191/BUNNY.png">
-<meta property="og:updated_time" content="2019-03-22T13:43:00.307Z">
+<meta property="og:updated_time" content="2020-07-21T11:32:20.147Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Windows下VS2017+PCL1.9.1配置">
-<meta name="twitter:description" content="##安装1.前往PCL的发布页面，选择适当的版本进行下载。注意win32/win64版本对应的是编译器，我是win10X64，编译的是32位程序，因此下载最新版的PCL-1.9.1-AllInOne-msvc2017-win32.exe和pcl-1.9.1-pdb-msvc2017-win32.zip  https://github.com/PointCloudLibrary/pcl/releas">
+<meta name="twitter:description" content="安装1.前往PCL的发布页面，选择适当的版本进行下载。注意win32/win64版本对应的是编译器，我是win10X64，编译的是32位程序，因此下载最新版的PCL-1.9.1-AllInOne-msvc2017-win32.exe和pcl-1.9.1-pdb-msvc2017-win32.zip  https://github.com/PointCloudLibrary/pcl/releases">
 <meta name="twitter:image" content="http://oerrol.github.io/assets/img/PCL191/PATH.png">
 
 
@@ -331,16 +329,17 @@
       
 
       
-        <p>##安装<br>1.前往PCL的发布页面，选择适当的版本进行下载。注意win32/win64版本对应的是编译器，我是win10X64，编译的是32位程序，因此下载最新版的PCL-1.9.1-AllInOne-msvc2017-win32.exe和pcl-1.9.1-pdb-msvc2017-win32.zip</p>
+        <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>1.前往PCL的发布页面，选择适当的版本进行下载。注意win32/win64版本对应的是编译器，我是win10X64，编译的是32位程序，因此下载最新版的PCL-1.9.1-AllInOne-msvc2017-win32.exe和pcl-1.9.1-pdb-msvc2017-win32.zip</p>
 <blockquote>
 <p><a href="https://github.com/PointCloudLibrary/pcl/releases" target="_blank" rel="noopener">https://github.com/PointCloudLibrary/pcl/releases</a></p>
 </blockquote>
+<p><em>20200721 Ps. 笔者已改为面向X64编程，因此安装的是64位版本，安装与配置过程与32位版本无差异。</em></p>
 <p>安装过程中可以直接下一步，会弹出OpenNI2的安装选项，最好选择安装在PCL库第三方功能3rdParty目录下，这样后面配置环境会相对方便。<a id="more"></a></p>
 <p>2.拷贝与安装PCL版本对应的PDB压缩包解压后的PDB文件，到PCL安装路径下的bin文件夹</p>
 <p>3.第三方依赖项环境变量配置。在PCL安装过程中，PCL的相关环境变量都已经配置好了，下面将第三方依赖项的环境变量进行配置。将</p>
 <pre><code>%PCL_ROOT%\bin;%PCL_ROOT%\3rdParty\FLANN\bin;%PCL_ROOT%\3rdParty\VTK\bin;%PCL_ROOT%\Qhull\bin;%PCL_ROOT%\3rdParty\OpenNI2\Tools
 </code></pre><p>添加到系统变量Path下<br><img src="/assets/img/PCL191/PATH.png" alt="PATH"><br>重启计算机。</p>
-<p>##配置<br>1.新建项目</p>
+<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>1.新建项目</p>
 <p>2.右键项目属性，设置包含目录<br><img src="/assets/img/PCL191/INCLUDES.png" alt="INCLUDES"></p>
 <p>3.设置库目录<br><img src="/assets/img/PCL191/LIBS.png" alt="LIBS"></p>
 <p>4.添加预处理器信息，这是因为PCL中用到了很多被VS2017认为不安全的方法，需要添加预处理器信息跳过报警，否则无法正常编译<br><img src="/assets/img/PCL191/PRE.png" alt="PRE"></p>
@@ -613,7 +612,7 @@ vtkViewsContext2D-8.1.lib
 vtkViewsCore-8.1.lib
 vtkViewsInfovis-8.1.lib
 vtkzlib-8.1.lib
-</code></pre><p>##DEMO<br>新建main.cpp，代码如下：</p>
+</code></pre><h2 id="DEMO"><a href="#DEMO" class="headerlink" title="DEMO"></a>DEMO</h2><p>新建main.cpp，代码如下：</p>
 <pre><code>#include &lt;pcl/visualization/cloud_viewer.h&gt;
 #include &lt;iostream&gt;//标准C++库中的输入输出类相关头文件。
 #include &lt;pcl/io/io.h&gt;
@@ -1128,6 +1127,10 @@ int main()
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2020/07/21/20200721/" rel="prev" title="增材成形直壁的点云预处理">
+                增材成形直壁的点云预处理 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -1181,8 +1184,17 @@ int main()
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -1197,7 +1209,7 @@ int main()
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -1275,6 +1287,22 @@ int main()
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装"><span class="nav-number">1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置"><span class="nav-number">2.</span> <span class="nav-text">配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DEMO"><span class="nav-number">3.</span> <span class="nav-text">DEMO</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
 
@@ -1288,7 +1316,7 @@ int main()
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -1597,6 +1625,8 @@ int main()
   
 
   
+  
+
 
   
 
